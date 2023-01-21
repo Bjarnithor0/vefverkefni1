@@ -1,7 +1,44 @@
 body {
-    background-color: rgb(111, 0, 255);
+    background-color: rgb(94, 12, 202);
 }
 
-.Fjólublártexti{
-    color: rgba(21, 140, 195, 0.979);
+.fontstyle {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.mainborder{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgb(94, 12, 202);
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    margin: 7px;
+    padding: 5px;
+}
+
+.CloseEyes{
+    color: lime;
+}
+
+.text{
+    color: yellow;
+    padding: 4px;
+}
+.firstbox{
+    background-color: rgb(30, 0, 255);
+    height: 250px;
+    width: 300px;
+    border-width: 2px;
+    margin: 4px;
+    padding: 4px;
+    border-color: black;
+    border-style: solid;
+    color: rgba(251, 0, 255, 0.979)
+}
+.cyantext{
+    color: rgba(116, 237, 237, 0.979);
+}
+
+.pinktext{
+    color: rgba(233, 107, 214, 0.979)
 }
