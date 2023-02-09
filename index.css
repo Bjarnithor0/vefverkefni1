@@ -1,180 +1,62 @@
-html,body{
-    height: fill;
-}
+
 body{
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: linear-gradient(to top,rgb(183, 0, 255),rgb(98, 0, 255),rgb(0, 60, 255));
-    text-decoration: rgb(255, 255, 255);
+font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+background: linear-gradient(to top,rgb(208, 0, 255),rgb(132, 0, 255),rgb(76, 0, 255));
 }
 
-article{
-    color: white;
+picture{
+    align-content: center;
+}
+.size{
+max-width: 70%;
+margin: 0 auto;
+padding: 15px;
 }
 
-div{
-    padding: 5px;
-    margin: 5px;
-    border-radius: 5px;
-}
-.a{
-    grid-area: a;
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
-.b{
-    grid-area: b;
+.mynd_rod{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 1fr;
 }
 
-.c{
-    grid-area: c;
-    
+@media screen and (min-width:512px) {
+
+    .mynd_rod{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
-.d{
-    grid-area: d;
-}
+@media screen and (min-width:1024px) {
 
-
-div{
-    margin: 5px;
-    padding: 5px;
-    background-color: black;
-    border: 2px solid rgb(0, 255, 76)
+    .mynd_rod{
+        display: grid;
+        grid-gap: 15px;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 .wrapper{
-    display: grid;
-    grid-gap: 5px;
-    grid-template-columns: 1fr;
-
-    grid-template-areas:
-    "a"
-    "b"
-    "c"
-    "d";
-}
-
-@media screen and (min-width:480px){
-
-    .wrapper{
-        display: grid;
-        grid-gap: 5px;
-        grid-template-columns: 1fr 1fr;
-    
-        grid-template-areas:
-        "a b"
-        "c d";
-    }
-    
-}
-
-@media screen and (min-width:768px){
-
-    .wrapper{
-        display: grid;
-        grid-gap: 5px;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    
-        grid-template-areas:
-        "a b c d";
-    }
-
-}
-
-.header { grid-area: header; }
-.nav { grid-area: nav; }
-.main { grid-area: main; }
-.aside1 { grid-area: aside1; }
-.footer { grid-area: footer; }
-.aside2 { grid-area: aside2; }
-.aside3 { grid-area: aside3; }
-
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'nav'
-      'header'
-      'main1'
-      'main2'
-      'aside1'
-      'aside2'
-      'footer';
-    gap: 20px;
-    background-color: #272727;
-    text-align: left;
-    font-size: 15px;
+    background-color: aqua;
+    max-width: 960px;
+    margin: 0 auto;
     padding: 20px;
-    margin: 5px;
+    border-width: 4px;
     border-radius: 5px;
-    border: 2px solid rgb(0, 255, 247)
-  }
-
-
-  a{
-    background-color: rgb(28, 28, 28);
-    color: rgb(212, 0, 255);
-    border-radius: 4px;
-    border-color: rgb(26, 255, 0);
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
-a:hover{
-    color: rgb(144, 0, 255);
+.wrapper:after{
+    content: "";
+    display: block;
+    clear: both;
 }
-
-h1{
-    color: violet;
-}
-
-.valmynd{
-    display:grid;
-    grid-template-columns:repeat(4,1fr);
-    justify-items: center;
-}
-
-@media screen and (min-width:480px){
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-          'nav nav'
-          'header header'
-          'main2 main'
-          'aside1 aside1'
-          'aside2 aside2'
-          'footer footer';
-        gap: 20px;
-        background-color: #272727;
-        text-align: left;
-        font-size: 15px;
-        padding: 20px;
-        margin: 5px;
-        border-radius: 5px;
-        border: 2px solid rgb(0, 255, 247)
-      }
-}
-
-@media screen and (min-width:768px){
-
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas:
-          'nav nav'
-          'header header'
-          'main2 main'
-          'aside1 aside2'
-          'footer footer';
-        gap: 20px;
-        background-color: #272727;
-        text-align: left;
-        font-size: 15px;
-        padding: 20px;
-        margin: 5px;
-        border-radius: 5px;
-        border: 2px solid rgb(0, 255, 247)
-      }
-
+.float{
+    float: left;
 }
