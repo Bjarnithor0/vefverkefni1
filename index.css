@@ -1,3 +1,58 @@
+table{
+    width: 80%;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: violet;
+    text-align: left;
+}
+
+tbody tr:nth-child(even){
+    background-color: royalblue;
+}
+
+tbody tr:nth-child(odd){
+    background-color: yellow;
+}
+
+td, th{
+    border: 1px solid black;
+    padding:5px
+}
+
+@media screen and (max-width:600px) {
+
+    thead{
+        display: none;
+    }
+    
+    td{
+        display: block;
+        text-align: right;
+    }
+
+    tr{
+        display: block;
+        margin-bottom: 5px;
+    }
+
+    td::before{
+        content: attr(gögn);
+        float: left;
+    }
+}
+
+form{
+    margin-top: 30px;
+    width: 25%;
+}
+
+fieldset{
+    background-color:rgb(144, 26, 255);
+    border: rgb(240, 110, 255) solid;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -26,8 +81,8 @@ div{
 
 .upp{
     position: fixed;
-    bottom: 25px;
-    right: 25px;
+    bottom: 15px;
+    right: 15px;
 
     width: 50px;
     height: 50px;
@@ -46,4 +101,13 @@ div{
 .upp:hover{
     background-color: rgb(50, 50, 50);
     color: rgb(255, 0, 255);
+}
+
+table{
+    margin-bottom: 20px;
+}
+
+form{
+    width: fit-content;
+    length: 750px;
 }
